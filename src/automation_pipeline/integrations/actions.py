@@ -54,7 +54,7 @@ def summary(path):
     manifest, revision = state.current(path)
     return (
         f"## Review: {revision['outputs']['format']['title']}\n\n"
-        f"Run: `{manifest['run_id']}` Â· revision {manifest['revision']}\n\n"
+        f"Run: `{manifest['run_id']}` | revision {manifest['revision']}\n\n"
         f"Technical checks: **{revision['quality']['status']}**. Human factual review required.\n\n"
         f"{revision['outputs']['write']['markdown']}\n\n"
         f"Evidence limits: {revision['evidence']['limitations']}\n\n"
