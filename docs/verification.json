@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/somthompsonvill/ai-content-automation-pipeline",
+  "review_issue": "https://github.com/somthompsonvill/ai-content-automation-pipeline/issues/1",
+  "run_id": "run-0738fe9e0f35486eb36d",
+  "checks": [
+    "setup",
+    "generation",
+    "revision",
+    "stale_approval_rejected",
+    "valid_approval",
+    "duplicate_comment_noop",
+    "rejection",
+    "remote_readback"
+  ],
+  "execution": "local trusted runner against GitHub API; Actions execution pending workflow authorization",
+  "paid_calls": 0,
+  "wordpress_mutations": 0,
+  "date": "2026-10-22",
+  "local_offline_tests": {
+    "passed": 55,
+    "network": "socket connections denied"
+  },
+  "package": {
+    "wheel_install_outside_source": "passed",
+    "credential_free_demo": "passed",
+    "failure_revision_approval_walkthrough": "passed"
+  },
+  "static_checks": "passed",
+  "workflow_yaml_and_action_pins": "validated locally; files not uploaded",
+  "ci_matrix": "pending: GitHub Actions files require workflow credential permission",
+  "repository_visibility": "private staging",
+  "paid_provider_live_calls": "not performed",
+  "wordpress_live_delivery": "not performed",
+  "release_status": "held until remote Actions validation and publication checks complete"
+}

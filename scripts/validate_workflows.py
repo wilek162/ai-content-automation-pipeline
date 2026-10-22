@@ -4,7 +4,11 @@ from pathlib import Path
 import re
 import yaml
 
-for path in Path(".github/workflows").glob("*.yml"):
+workflows = list(Path(".github/workflows").glob("*.yml"))
+assert {path.name for path in workflows} == {"ci.yml", "demo.yml", "automation.yml"}, (
+    "Expected workflow files are missing"
+)
+for path in workflows:
     data = yaml.load(path.read_text(encoding="utf-8"), Loader=yaml.BaseLoader)
     assert "on" in data and "jobs" in data, path
     assert "schedule" not in data["on"], path

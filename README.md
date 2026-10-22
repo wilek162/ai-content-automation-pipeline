@@ -1,5 +1,7 @@
 # AI Content Automation Pipeline
 
+> Private staging: source and offline/API checks are complete. Actions upload, remote CI, and public release are pending workflow authorization. See [verification](docs/verification.json).
+
 A Python workflow that turns supplied source documents into a reviewed technical article through four AI stages. It preserves evidence, resumes interrupted work, bounds managed AI reservations, and delivers **drafts only** after human approval.
 
 **Try it without API keys, network access, WordPress, or paid AI calls.** The default provider uses labeled fixture responses through the same runner and validators as live providers.
@@ -36,7 +38,7 @@ python -m automation_pipeline demo
 
 The command prints a run ID and review digest. Open `runs/<run-id>/preview.html`; the draft, quality report, evidence ledger, requests, and responses are retained locally. Repeating `demo` creates a separate run. Its example sources are project-authored demonstration material hosted at illustrative `example.com` URLs; no web retrieval or independent verification is implied.
 
-For a reproducible failure → revision → approval walkthrough:
+For a reproducible failure â†’ revision â†’ approval walkthrough:
 
 ```sh
 python scripts/demo_walkthrough.py
@@ -71,7 +73,7 @@ Prompts live in the installed package's `assets/prompts` directory. Root `prompt
 
 ## Optional integrations
 
-[Setup and recovery guide](docs/integrations.md) · [Architecture](docs/architecture.md) · [Security boundaries](SECURITY.md) · [Release verification](docs/release-checklist.md)
+[Setup and recovery guide](docs/integrations.md) Â· [Architecture](docs/architecture.md) Â· [Security boundaries](SECURITY.md) Â· [Release verification](docs/release-checklist.md)
 
 Live providers require an optional dependency, explicit model and cost profile, credentials, and an initialized budget month. No current provider prices or paid allowance are assumed. The default demo requires none of them.
 
