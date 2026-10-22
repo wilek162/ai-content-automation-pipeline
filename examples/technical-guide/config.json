@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "topic": "How automated backups work",
+  "locale": "en",
+  "editorial_brief": "Write a practical technical explainer using only supplied source material. Label demonstration sources honestly.",
+  "target_words": 240,
+  "provider": "fixture",
+  "max_output_tokens": 2048,
+  "source_manifest": "sources.json",
+  "allowed_source_hosts": [
+    "example.com"
+  ],
+  "output_dir": "../../runs",
+  "fixture_scenario": "default",
+  "word_count_tolerance": 0.3
+}

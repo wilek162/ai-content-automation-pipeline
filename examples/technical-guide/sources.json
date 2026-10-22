@@ -1,0 +1,9 @@
+[
+  {
+    "id": "backup-notes",
+    "title": "Project-authored demonstration backup notes",
+    "origin_url": "https://example.com/demo/backup-notes",
+    "text_file": "backup-notes.txt",
+    "sha256": "90b1f4a0e8abc459734466f6e298776cc8a04b36747d5b7ddfbd3421819db2ed"
+  }
+]

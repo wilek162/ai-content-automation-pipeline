@@ -1,0 +1,5 @@
+Automated backups copy selected data to a separate storage location on a schedule. A backup job needs a source, a destination, a schedule, and a retention policy. Keeping a copy on a separate device reduces dependence on the original device.
+
+Retention policies determine how long backup copies are kept. A successful copy operation does not prove that the data can be restored. Restore tests check whether a saved copy can be read and used. Encryption can protect the confidentiality of stored backups, but access to the decryption key is required during recovery.
+
+Monitoring records when a backup starts, finishes, or fails. A missed job should be visible to the person responsible for recovery. Recovery objectives describe acceptable data loss and acceptable time to restore a service. Different systems can need different schedules.
