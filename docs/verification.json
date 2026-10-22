@@ -18,7 +18,11 @@
   "date": "2026-10-22",
   "local_offline_tests": {
     "passed": 55,
-    "network": "socket connections denied"
+    "network": "socket connections denied",
+    "python_versions": {
+      "3.11": "55 passed",
+      "3.12": "55 passed from fresh clone"
+    }
   },
   "package": {
     "wheel_install_outside_source": "passed",
@@ -31,5 +35,12 @@
   "repository_visibility": "private staging",
   "paid_provider_live_calls": "not performed",
   "wordpress_live_delivery": "not performed",
-  "release_status": "held until remote Actions validation and publication checks complete"
+  "release_status": "held until remote Actions validation and publication checks complete",
+  "publication_scan": {
+    "reachable_blobs_checked": 87,
+    "credential_pattern_hits": 0,
+    "private_identifier_hits": 0,
+    "coverage": "main and pipeline-state history"
+  },
+  "local_workflow_commit": "d0d7db2"
 }
