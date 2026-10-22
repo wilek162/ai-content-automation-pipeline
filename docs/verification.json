@@ -12,7 +12,7 @@
     "rejection",
     "remote_readback"
   ],
-  "execution": "local trusted runner against GitHub API; Actions execution pending workflow authorization",
+  "execution": "GitHub Actions plus local offline verification",
   "paid_calls": 0,
   "wordpress_mutations": 0,
   "date": "2026-10-22",
@@ -30,17 +30,38 @@
     "failure_revision_approval_walkthrough": "passed"
   },
   "static_checks": "passed",
-  "workflow_yaml_and_action_pins": "validated locally; files not uploaded",
-  "ci_matrix": "pending: GitHub Actions files require workflow credential permission",
-  "repository_visibility": "private staging",
+  "workflow_yaml_and_action_pins": "current official release SHAs validated in GitHub Actions",
+  "ci_matrix": {
+    "status": "success",
+    "python": [
+      "3.11",
+      "3.12"
+    ],
+    "os": [
+      "ubuntu-latest",
+      "windows-latest"
+    ],
+    "tests_per_environment": 55
+  },
+  "repository_visibility": "public",
   "paid_provider_live_calls": "not performed",
   "wordpress_live_delivery": "not performed",
-  "release_status": "held until remote Actions validation and publication checks complete",
+  "release_status": "v0.1.0 release candidate verified; live provider and WordPress execution remain opt-in",
   "publication_scan": {
-    "reachable_blobs_checked": 87,
+    "reachable_blobs_checked": 144,
     "credential_pattern_hits": 0,
     "private_identifier_hits": 0,
     "coverage": "main and pipeline-state history"
   },
-  "local_workflow_commit": "d0d7db2"
+  "workflow_runs": {
+    "ci": "https://github.com/somthompsonvill/ai-content-automation-pipeline/actions/runs/39759434578",
+    "setup": "https://github.com/somthompsonvill/ai-content-automation-pipeline/actions/runs/39758856667",
+    "generation": "https://github.com/somthompsonvill/ai-content-automation-pipeline/actions/runs/39758973187",
+    "revision": "https://github.com/somthompsonvill/ai-content-automation-pipeline/actions/runs/39759323886",
+    "stale_approval_expected_failure": "https://github.com/somthompsonvill/ai-content-automation-pipeline/actions/runs/39759456788",
+    "approval": "https://github.com/somthompsonvill/ai-content-automation-pipeline/actions/runs/39759577176",
+    "rejection": "https://github.com/somthompsonvill/ai-content-automation-pipeline/actions/runs/39759698363",
+    "clean_generation": "https://github.com/somthompsonvill/ai-content-automation-pipeline/actions/runs/39759696876",
+    "offline_demo": "https://github.com/somthompsonvill/ai-content-automation-pipeline/actions/runs/39759700467"
+  }
 }

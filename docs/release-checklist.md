@@ -5,12 +5,12 @@ Verification is recorded against the released source revision. Do not interpret 
 ## Required checks
 
 - [x] Fresh virtual environment installation, outside-source CLI help, and built-wheel demo.
-- [ ] Offline tests with socket denial; Windows/Linux Python 3.11/3.12 CI matrix.
-- [x] Static checks, local workflow YAML/pinned Actions, source-resource consistency.
-- [ ] Credential-pattern scan of tracked files and all reachable Git blobs.
-- [ ] Private publication scan of runtime branch, public examples, artifacts, and history.
-- [x] GitHub API setup, generation, revision, stale approval, valid approval, duplicate event, and rejection exercises from the trusted local runner. Actions execution is still pending.
-- [ ] Repository visibility and release artifact readback.
+- [x] Offline tests with socket denial; Windows/Linux Python 3.11/3.12 CI matrix.
+- [x] Static checks, workflow YAML/pinned Actions, source-resource consistency.
+- [x] Credential-pattern scan of tracked files and all reachable Git blobs.
+- [x] Private publication scan of runtime branch, public examples, artifacts, and history.
+- [x] GitHub API setup, generation, revision, stale approval, valid approval, duplicate event, and rejection exercises from the trusted local runner. Actions execution also passed; evidence links are in verification.json.
+- [x] Repository visibility and release artifact readback.
 
 ## Optional integrations
 
@@ -22,6 +22,6 @@ Disable the automation workflow to stop remote mutations. Existing WordPress dra
 
 See `verification.json` for recorded local/remote results and run links when a release is prepared.
 
-## Current staging status
+## Release validation
 
-The source is uploaded privately. Workflow definitions are prepared locally but not uploaded because the current GitHub CLI OAuth credential lacks workflow permission. Automated CI, Actions execution, public visibility, profile pinning, and the v0.1.0 release remain pending. No paid provider or real WordPress calls have been made.
+The repository is public. The Windows/Linux Python 3.11/3.12 matrix passed, including 55 offline tests per environment and built-wheel installation checks. GitHub Actions generation, revision, stale-approval rejection, valid approval and rejection passed. Public source/runtime history and downloaded demo artifacts were inspected. Live paid-provider calls and real WordPress delivery were not performed.
